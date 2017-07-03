@@ -7,6 +7,26 @@ This is a Express presentation.
 npm install
 ```
 
+# Before Start
+You will need to set up your firebase database at `.\backend\Firebase.js`
+
+```javascript
+var firebase = require('firebase');
+
+var config = {
+    apiKey: "YOURKEY",
+    authDomain: "YOURDOMAIN",
+    databaseURL: "YOURURL",
+    projectId: "YOURID",
+    storageBucket: "YOURATORAGEBUCKET",
+    messagingSenderId: "YOURID"
+};
+firebase.initializeApp(config);
+
+
+module.exports = firebase;
+```
+
 # Start the applicadion
 
 ```
